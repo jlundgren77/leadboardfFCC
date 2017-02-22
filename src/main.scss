@@ -1,0 +1,74 @@
+@import '../node_modules/normalize.css/normalize.css';
+
+
+
+/*****************************
+	Color Variables
+*****************************/
+
+$main: #D5E2E8;	
+    /******************
+      MonoChromatic
+    ******************/
+    $main-dark: #606669;
+    $main-blue: #91CFEC;
+    $main-turquoise: #405C69;
+    $main-darken-grey: #A6B0B5;  
+
+body {
+	background-color: $main;
+}
+
+
+.header {
+	
+	display: inline-block;
+	width: 100%;
+
+}
+
+.logo-header {
+	background-color: $main-dark;
+	margin: 0;
+	padding: 0.5em;
+	width: 100%;
+
+	.logo {
+		width: 15em;
+	}
+}
+
+.leaderboard {
+
+	margin-top: 75px;
+	tr {
+		border: 1px solid black;
+	}
+
+	thead>tr, tr:nth-child(even) {
+		background-color: $main-dark-grey;
+	}
+}
+
+.avatar {
+	width: 40px;
+	border: 1px solid green;
+	margin-right: 10px;
+}
+
+.sortCol {
+	cursor: pointer;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+	
+}
+
+.sorted {
+	&:after {
+		content: '\25bc';
+		font-size: 14px;
+		margin-left: 2px;
+	}
+}
